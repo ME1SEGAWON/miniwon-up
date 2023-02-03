@@ -101,7 +101,7 @@ if (hostname) {
     log.info("server", "Custom hostname: " + hostname);
 }
 
-const port = [ args.port, process.env.UPTIME_KUMA_PORT, process.env.PORT, 3001 ]
+const port = [ args.port, process.env.UPTIME_KUMA_PORT, process.env.PORT, 80 ]
     .map(portValue => parseInt(portValue))
     .find(portValue => !isNaN(portValue));
 
